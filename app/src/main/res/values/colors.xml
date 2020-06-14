@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F09758</color>
+    <color name="colorPrimaryDark">#BF7129</color>
+    <color name="colorAccent">#DFBA5B</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="background">#EB8B7D</color>
+
+    <color name="textColor">#302626</color>
+    <color name="secondaryTextColor">#9A1E0D</color>
+    <color name="buttonTextColor">#FFF2E7</color>
+    <color name="buttonSelectedTextColor">#FFEAE3</color>
+
+    <color name="buttonColor">#BF7129</color>
+    <color name="buttonSelectedColor">#612E00</color>
+
+    <color name="drawLineColor">#0C2ACF</color>
+
+    <color name="dialogDimColor">#88000000</color>
+</resources>

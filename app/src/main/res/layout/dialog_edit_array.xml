@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@drawable/bg_dialog">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/DialogHeaderText"
+        android:layout_marginTop="16dp"
+        android:text="@string/edit_array"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/DialogHeaderText"
+        android:layout_marginTop="16dp"
+        android:text="@string/edit_array_subtitle"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <ScrollView
+        android:id="@+id/arrayScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        android:requiresFadingEdge="vertical"
+        android:fadingEdgeLength="8dp"
+        app:layout_constraintTop_toBottomOf="@id/subTitle">
+
+        <TextView
+            android:id="@+id/arrayText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/MyText"
+            android:textSize="26sp"
+            android:gravity="center_horizontal"
+            tools:text="3 ; 4 ; 6 ; 4 ; 4 ; 2 ; 4 ; 1 ; 4 ; 5 ; 6 ; 23 ; 23 ; 52 ; 2 ; 12 ; 14 ; 451" />
+
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/numberInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MyText"
+        android:layout_marginTop="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="center_horizontal"
+        android:textSize="42sp"
+        android:inputType="numberDecimal"
+        android:minEms="3"
+        android:maxLength="6"
+        android:imeOptions="actionNone"
+        app:layout_constraintTop_toBottomOf="@id/arrayScrollView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ButtonSmall"
+        android:layout_marginTop="16dp"
+        android:text="@string/add"
+        app:layout_constraintTop_toBottomOf="@id/numberInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/DialogActionFirstText"
+        android:text="@string/save"
+        app:layout_constraintTop_toBottomOf="@id/buttonAdd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/buttonCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/DialogActionText"
+        android:text="@string/cancel"
+        app:layout_constraintTop_toBottomOf="@id/buttonAdd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonSave"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

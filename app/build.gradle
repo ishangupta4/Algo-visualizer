@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: "androidx.navigation.safeargs.kotlin"
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.0"
+    defaultConfig {
+        applicationId "com.flaringapp.sortvisualiztion"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        renderscriptTargetApi 22
+        renderscriptSupportModeEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+
+    def appDependencies = rootProject.ext.appDependencies
+
+    implementation appDependencies.appCompat
+
+    implementation appDependencies.constraintLayout
+
+    implementation appDependencies.kotlin
+
+    implementation appDependencies.kotlinCoroutines
+
+    implementation appDependencies.koin
+
+    implementation appDependencies.rxKotlin
+    implementation appDependencies.rxAndroid
+
+    implementation appDependencies.ktxCore
+
+    implementation appDependencies.fragmentNavigationKtx
+    implementation appDependencies.UINavigationKtx
+
+    implementation appDependencies.fragmentKtx
+
+    implementation appDependencies.toasty
+
+    implementation appDependencies.realtimeBlurView
+}

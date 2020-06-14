@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Algo visualizer</string>
+
+    <string name="array_creation_subtitle" translatable="false">[ . . . . . . ]</string>
+    <string name="sort_method_subtitle" translatable="false"><![CDATA[< - - - - - - >]]></string>
+    <string name="edit_array_subtitle" translatable="false">( . . . | . . . )</string>
+
+    <string name="start">Start</string>
+    <string name="array_creation">Array creation</string>
+    <string name="continueText">Continue</string>
+    <string name="view_array">Click to view array</string>
+    <string name="edit">Edit</string>
+    <string name="random">Random</string>
+    <string name="sort_method">Sort method</string>
+    <string name="sort">Sort</string>
+
+    <string name="sort_method_bubble">Bubble Sort</string>
+    <string name="sort_method_bubble_flagged">Bubble with flag</string>
+    <string name="sort_method_selection">Selection</string>
+
+    <string name="too_small_array">Add at least %1$d elements to your array</string>
+    <string name="sort_completed">Sort completed</string>
+    <string name="minutes_short">m</string>
+    <string name="array_length">Array length</string>
+    <string name="sorting">Sorting</string>
+    <string name="log_too_big_display_array">Array is too big to display all elements. You will see %1$d numbers from whole list</string>
+    <string name="log_too_big_update_array">Array is too big to log each iteration. Array will be logged once in %1$d milliseconds</string>
+    <string name="sort_completed_in">Sorting completed in</string>
+    <string name="edit_array">Edit array</string>
+    <string name="add">Add</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit_array_max_editing_count">You can\'t open edit dialog after reaching max editing size (%1$d)</string>
+    <string name="final_array">Final array</string>
+    <string name="sort_started">Sorting started</string>
+    <string name="removed_numbers_multiple_three">Removed all numbers multiple 3</string>
+    <string name="all_numbers_squared">All numbers are squared</string>
+    <string name="sort_method_shell">Insertion sort</string>
+    <string name="sort_method_merge">Merge sort</string>
+    <string name="sort_method_quick">Quick sort</string>
+    <string name="sort_method_counting">Counting sort</string>
+    <string name="details">ISHAN GUPTA</string>
+    <string name="enrollment">18COB004</string>
+</resources>
